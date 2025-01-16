@@ -2,7 +2,8 @@
 
 A modern, responsive React application for visualizing web performance metrics. Built with React, TypeScript, Apache ECharts, and Tailwind CSS.
 
-![SpeedVitals Dashboard](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000)
+
+
 
 ## Features
 
@@ -30,8 +31,8 @@ A modern, responsive React application for visualizing web performance metrics. 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/speedvitals-dashboard.git
-cd speedvitals-dashboard
+git clone https://github.com/Agastya18/speedvitals-task.git
+cd speedvitals-task
 ```
 
 2. Install dependencies:
@@ -56,7 +57,7 @@ npm run dev
 ## Project Structure
 
 ```
-speedvitals-dashboard/
+speedvitals-task/
 ├── src/
 │   ├── components/
 │   │   ├── Navbar.tsx
