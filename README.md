@@ -2,6 +2,7 @@
 
 A modern, responsive React application for visualizing web performance metrics. Built with React, TypeScript, Apache ECharts, and Tailwind CSS.
 
+<img width="1457" alt="Screenshot 2025-01-16 at 7 16 25 PM" src="https://github.com/user-attachments/assets/0fcd7fa6-1ec7-4300-a194-2f13935e531b" />
 
 
 
