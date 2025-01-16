@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Dropdown from './components/Dropdown';
 import PerformanceGraph from './components/PerformanceGraph';
@@ -59,7 +59,7 @@ function App() {
           Performance Report
         </h1>
 
-        <div className="flex justify-center space-x-4 mb-8">
+        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
           <Dropdown
             label="Metric"
             value={metric}

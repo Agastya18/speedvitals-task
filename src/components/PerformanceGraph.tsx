@@ -15,21 +15,28 @@ const PerformanceGraph: React.FC<PerformanceGraphProps> = ({ data, title }) => {
         color: '#374151',
         fontWeight: 'normal',
       },
+      top: 0,
+      padding: [0, 20],
     },
     tooltip: {
       trigger: 'axis',
       formatter: '{b}: {c}',
     },
     grid: {
-      left: '3%',
-      right: '4%',
-      bottom: '3%',
+      left: '5%',
+      right: '5%',
+      bottom: '10%',
+      top: '15%',
       containLabel: true,
     },
     xAxis: {
       type: 'category',
       data: data?.timestamps || [],
       boundaryGap: false,
+      axisLabel: {
+        interval: 'auto',
+        rotate: window.innerWidth < 768 ? 45 : 0,
+      },
     },
     yAxis: {
       type: 'value',
@@ -73,11 +80,17 @@ const PerformanceGraph: React.FC<PerformanceGraphProps> = ({ data, title }) => {
         },
       },
     ],
+    responsive: true,
+    maintainAspectRatio: false,
   };
 
   return (
     <div className="w-full bg-white rounded-lg shadow-sm p-4">
-      <ReactECharts option={option} style={{ height: '400px' }} />
+      <ReactECharts 
+        option={option} 
+        style={{ height: '400px', minHeight: '300px' }}
+        opts={{ renderer: 'svg' }}
+      />
     </div>
   );
 };
